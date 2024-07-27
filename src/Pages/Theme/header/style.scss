@@ -1,0 +1,131 @@
+@use "sass:map";
+@import "/src/styles/pages/theme.scss";
+
+.header__top {
+  background: #f2f2f2;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.header__top_left {
+  display: grid;
+  align-items: center;
+  padding: 10px 0 13px;
+}
+.header__top_right {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0 13px;
+  ul {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    margin-left: 2px;
+    a {
+      font-size: 14px;
+      display: inline-block;
+      color: #df5b0c;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+.header__top_center {
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  ul {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    margin-top: 10px;
+    a {
+      font-size: 14px;
+      display: inline-block;
+      color: #df5b0c;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+.header__icon {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.ant-drawer .ant-menu-item a {
+  color: #000 !important;
+  text-decoration: none !important;
+  padding: 8px 16px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.ant-drawer .ant-menu-item a:hover {
+  background-color: #f0f0f0 !important;
+  border-radius: 4px !important;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  background-color: #e05e08;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+  border: 1px solid fff;
+}
+.custom-search .ant-btn {
+  border-radius: 0 4px 4px 0 !important;
+  background: #df5b0c !important;
+  color: #fff !important;
+}
+
+.box_tittle {
+  background: #df5b0c;
+  width: 100%;
+}
+.container_tittle {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.container_note {
+  border: 1px solid #ccc;
+}
+
+.container_intro {
+  margin: auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.btn_order {
+  color: #000;
+  background: #fed900;
+  border: 1px solid #fed900;
+
+  &:hover {
+    color: #fff !important;
+    background: #000 !important;
+    border: 1px solid #000 !important;
+  }
+}

@@ -1,0 +1,171 @@
+@use "sass:map";
+@import "/src/styles/pages/theme.scss";
+
+.header__top_left {
+  display: flex;
+  align-items: center;
+}
+
+.header__top_left .icon-footer {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 30px; /* Khoảng cách giữa icon và text */
+}
+
+.header__top_left .text-content-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-line-tittle {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.second-line-tittle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+
+.header__footer_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__footer_right input {
+  padding: 5px 350px 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header__footer_right button {
+  padding: 5px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ffd800;
+  color: #000;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.section-1 .icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-1 .icons i {
+  margin-right: 10px;
+}
+
+.section-2 {
+  border-left: 2px solid #ccc;
+}
+
+.section-2,
+.section-3,
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-2 .info1,
+.section-3 .info1,
+.section-4 .info1 {
+  padding: 20px;
+  text-align: center;
+}
+
+.info-top-f {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2.4;
+  color: #000;
+}
+
+.info-middle-f {
+  display: flex;
+  align-items: center;
+}
+
+.second-line {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.info-middle-f .icon-middle {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #e05c0a;
+}
+
+.info-middle-f .text-content-f {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-bottom-f a {
+  text-decoration: none;
+  color: #000;
+}
+
+.info-bottom-f a:hover {
+  text-decoration: underline;
+  color: #e05c0a;
+}
+
+.icons {
+  font-size: 24px;
+}
+
+.info-f {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2.4;
+  color: #000;
+}
+.list-end {
+    flex: 1;
+  }
+  
+  .list-end ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Đảm bảo danh sách chiếm toàn bộ chiều cao của cột */
+  }
+  
+  .list-end li {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .list-end li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ccc;
+    font-size: 16px;
+  }
+  
+  .list-end li a {
+    text-decoration: none;
+    color: inherit;
+  }
