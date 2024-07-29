@@ -1,0 +1,94 @@
+.filter {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.filter-item label {
+  margin-left: 5px;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-circle.red {
+  background: red;
+}
+
+.color-circle.blue {
+  background: blue;
+}
+
+.color-circle.green {
+  background: green;
+}
+
+.color-circle.yellow {
+  background: yellow;
+}
+
+.color-circle.black {
+  background: black;
+}
+
+.price-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-filter input[type="number"] {
+  width: 60px;
+}
+
+.price-slider {
+  margin-top: 10px;
+}
+
+.price-slider .rc-slider-track {
+  background: #468cd7;
+}
+
+.price-slider .rc-slider-rail {
+  background: #ddd;
+}
+
+.price-slider .rc-slider-handle {
+  background: #df5c0d;
+  border: 2px solid #df5c0d;
+}
+
+.filter-image {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filter-image img {
+  width: 100%;
+  height: auto;
+}

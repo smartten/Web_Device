@@ -421,12 +421,12 @@ const HomePage = () => {
                       <button className="button_buy">Shop Now</button>
                     </div>
                     <div className="image-content-wrapper">
-                    <div className="image-content">
-                      <img
-                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-1.png"
-                        alt="Page 1"
-                      />
-                    </div>
+                      <div className="image-content">
+                        <img
+                          src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-1.png"
+                          alt="Page 1"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -443,12 +443,12 @@ const HomePage = () => {
                       <button className="button_buy">Shop Now</button>
                     </div>
                     <div className="image-content-wrapper">
-                    <div className="image-content">
-                      <img
-                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-2.png"
-                        alt="Page 2"
-                      />
-                    </div>
+                      <div className="image-content">
+                        <img
+                          src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-2.png"
+                          alt="Page 2"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -465,12 +465,12 @@ const HomePage = () => {
                       <button className="button_buy">Shop Now</button>
                     </div>
                     <div className="image-content-wrapper">
-                    <div className="image-content">
-                      <img
-                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-3.png"
-                        alt="Page 3"
-                      />
-                    </div>
+                      <div className="image-content">
+                        <img
+                          src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/main-banner-3.png"
+                          alt="Page 3"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -480,12 +480,12 @@ const HomePage = () => {
               <div className="row h-100">
                 <div className="col-12 right-top">
                   <div className="image-content-wrapper">
-                  <div className="image-content">
-                    <img
-                      src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-1.jpg"
-                      alt="Page 4"
-                    />
-                  </div>
+                    <div className="image-content">
+                      <img
+                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-1.jpg"
+                        alt="Page 4"
+                      />
+                    </div>
                     <div className="text-overlay-container">
                       <div className="text-overlay">$29.99 ONLY</div>
                       <div className="text-overlay">BOSCH</div>
@@ -498,12 +498,12 @@ const HomePage = () => {
                 </div>
                 <div className="col-12 right-bottom">
                   <div className="image-content-wrapper">
-                  <div className="image-content">
-                    <img
-                      src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-2.jpg"
-                      alt="Page 5"
-                    />
-                  </div>
+                    <div className="image-content">
+                      <img
+                        src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/cms-banner-2.jpg"
+                        alt="Page 5"
+                      />
+                    </div>
                     <div className="text-overlay-container">
                       <div className="text-overlay">START FROM $9.99</div>
                       <div className="text-overlay">BRAND</div>
@@ -1033,7 +1033,7 @@ const HomePage = () => {
           <div className="container_intro">
             <div className="first_intro">Get Latest Update & News</div>
             <div className="second_intro">
-            Check our latest news and events.
+              Check our latest news and events.
             </div>
           </div>
         </div>

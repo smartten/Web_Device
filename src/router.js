@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import { ROUTERS } from "./utlis/router";
 import MasterLayout from "./Pages/Theme/masterLayout";
-import ProfilePage from "./Pages/ProfilePage";
+import ShopPage from "./Pages/ShopPage";
 
 const renderUserRouter = () => {
   const userRouters = [
@@ -11,8 +11,8 @@ const renderUserRouter = () => {
       component: <HomePage />,
     },
     {
-        path: ROUTERS.USER.PROFILE,
-        component: <ProfilePage />,
+        path: ROUTERS.USER.SHOP,
+        component: <ShopPage />,
       },
   ];
 

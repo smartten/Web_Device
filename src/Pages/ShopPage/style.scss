@@ -1,0 +1,95 @@
+@use "sass:map";
+@import "/src/styles/pages/theme.scss";
+
+.container-bread {
+  background-color: #f2f2f2 !important;
+}
+.breadcrumb {
+  font-size: 14px !important;
+  color: #000;
+  margin-bottom: 10px !important;
+  padding-left: 14px !important;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.list-bread .container {
+  display: flex;
+}
+
+.col-left {
+  width: 20% !important;
+  padding-right: 10px;
+}
+
+.filter h3 {
+  margin-top: 0;
+}
+
+.filter-image {
+  position: relative;
+  text-align: center;
+}
+
+.filter-image img {
+  width: 100%;
+  height: auto;
+}
+
+.filter-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.col-right {
+  width: 80% !important;
+  margin: 0 auto; 
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-count {
+  font-size: 14px;
+}
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .sort-menu {
+    padding: 5px 10px; 
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    height: 30px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .view-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer; 
+  }
+  
