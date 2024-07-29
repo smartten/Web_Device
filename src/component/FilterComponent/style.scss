@@ -24,8 +24,8 @@
 }
 
 .color-circle {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -50,6 +50,14 @@
   background: black;
 }
 
+.color-circle.orange {
+  background: orange;
+}
+
+.color-circle.gray {
+  background: gray;
+}
+
 .price-filter {
   display: flex;
   flex-direction: column;
@@ -61,8 +69,22 @@
   justify-content: space-between;
 }
 
-.price-filter input[type="number"] {
-  width: 60px;
+.price-inputs input[type="text"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80px;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  cursor: default;
+}
+
+.price-inputs input[type="text"]::placeholder {
+  color: #aaa;
 }
 
 .price-slider {

@@ -79,16 +79,18 @@ const FilterComponent = () => {
 
         <h5>Filter By Color</h5>
         <div className="color-options">
-          {["black", "blue", "green", "orange", "yellow"].map((col) => (
-            <div
-              key={col}
-              className={`color-circle ${col}`}
-              onClick={() => handleColorChange(col)}
-              style={{
-                backgroundColor: col,
-                border: color === col ? "2px solid black" : "none",
-              }}></div>
-          ))}
+          {["black", "blue", "gray", "green", "orange", "red", "yellow"].map(
+            (col) => (
+              <div
+                key={col}
+                className={`color-circle ${col}`}
+                onClick={() => handleColorChange(col)}
+                style={{
+                  backgroundColor: col,
+                  border: color === col ? "2px solid black" : "none",
+                }}></div>
+            )
+          )}
         </div>
 
         <h5>Filter By Size</h5>
@@ -108,21 +110,17 @@ const FilterComponent = () => {
         <div className="price-filter">
           <div className="price-inputs">
             <input
-              type="number"
+              type="text"
               name="min"
               value={price[0]}
-              onChange={(e) =>
-                handlePriceChange([Number(e.target.value), price[1]])
-              }
+              readOnly
               placeholder="Min"
             />
             <input
-              type="number"
+              type="text"
               name="max"
               value={price[1]}
-              onChange={(e) =>
-                handlePriceChange([price[0], Number(e.target.value)])
-              }
+              readOnly
               placeholder="Max"
             />
           </div>
@@ -137,6 +135,7 @@ const FilterComponent = () => {
           />
         </div>
       </div>
+
       <div className="filter-image">
         <img
           src="https://demos.coderplace.com/woo/WCM02/WCM02045/WP01/wp-content/uploads/2023/06/left-banner-01-1.jpg"
