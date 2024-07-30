@@ -1,0 +1,237 @@
+@use "sass:map";
+@import "/src/styles/pages/theme.scss";
+
+
+.container_about {
+    background-color: #f2f2f2 !important;
+  }
+  .breadcrumb {
+    font-size: 14px !important;
+    color: #000;
+    margin-bottom: 10px !important;
+    padding-left: 14px !important;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+.container_inform {
+    padding: 20px;
+}
+
+.left_column_contact {
+    flex: 0.5;
+}
+
+.contact_tittle{
+    color: #E05C0B;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.info_item_n {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.icon_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon_title i {
+    margin-right: 10px;
+}
+
+.info_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.info_description {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+}
+
+.image_container_contact img {
+    max-width: 100%;
+    height: auto;
+    /* Add additional styling for the image here */
+}
+
+.right_column_contact {
+    flex: 2;
+    background: #f2f2f2;
+    margin-right: 80px;
+    padding: 50px !important;
+}
+
+.form_section_contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_title {
+    color: #E05C0B;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form_row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form_group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form_group:last-child {
+    margin-right: 0;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+}
+
+.form_group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.form_group input::placeholder {
+    color: #a9a9a9; /* Placeholder text color */
+    font-size: 16px; /* Same as input text size */
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+}
+
+
+.full_width {
+    flex: 1 0 100%;
+}
+
+.large_input {
+    width: 100%;
+    height: 250px;
+    /* You can adjust the size of the input here */
+}
+
+.submit_button {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background: #fed800;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background: #000;
+    color: #fff;
+}
+
+.header_section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.header_section h2{
+    color: #E05C0B;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.header_section p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+}
+
+  .accordion {
+    width: 100%;
+  }
+  .accordion_radio {
+    display: none;
+  }
+  .accordion_header {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 2.4;
+    cursor: pointer;
+
+  }
+
+  .accordion_header .icon {
+    margin-right: 10px;
+  }
+
+  .accordion_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 10px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+  }
+
+  .accordion_radio:checked + .accordion_header + .accordion_content {
+    max-height: 500px; /* Đặt giá trị lớn hơn so với chiều cao thực tế */
+    padding: 10px 10px; /* Thêm padding khi mở */
+  }
+
+  .accordion_radio:checked + .accordion_header .icon:before {
+    content: '-';
+  }
+
+  .accordion_radio:not(:checked) + .accordion_header .icon:before {
+    content: '+';
+  }

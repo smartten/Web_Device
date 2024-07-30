@@ -3,6 +3,8 @@ import HomePage from "./Pages/HomePage";
 import { ROUTERS } from "./utlis/router";
 import MasterLayout from "./Pages/Theme/masterLayout";
 import ShopPage from "./Pages/ShopPage";
+import AboutUsPage from "Pages/AboutUsPage";
+import ContactPage from "Pages/ContactPage";
 
 const renderUserRouter = () => {
   const userRouters = [
@@ -11,9 +13,17 @@ const renderUserRouter = () => {
       component: <HomePage />,
     },
     {
-        path: ROUTERS.USER.SHOP,
-        component: <ShopPage />,
-      },
+      path: ROUTERS.USER.SHOP,
+      component: <ShopPage />,
+    },
+    {
+      path: ROUTERS.USER.ABOUT,
+      component: <AboutUsPage />,
+    },
+    {
+      path: ROUTERS.USER.CONTACT,
+      component: <ContactPage />,
+    },
   ];
 
   return (

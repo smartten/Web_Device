@@ -1,0 +1,193 @@
+@use "sass:map";
+@import "/src/styles/pages/theme.scss";
+
+.container_about {
+  background-color: #f2f2f2 !important;
+}
+.breadcrumb {
+  font-size: 14px !important;
+  color: #000;
+  margin-bottom: 10px !important;
+  padding-left: 14px !important;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container_about_store {
+  margin: 20px 0 40px 0;
+}
+
+.col_left_about {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.col_left_about h2 {
+  color: #e05c0b;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.col_left_about p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+}
+
+.col_left_about ul {
+  list-style-type: none; /* Loại bỏ dấu đầu dòng mặc định */
+  margin: 0;
+  padding: 0 0 0 20px; /* Khoảng cách để dấu tích xuất hiện */
+}
+
+.col_left_about ul li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  position: relative;
+  margin-bottom: 10px; /* Khoảng cách giữa các dòng */
+  padding-left: 20px; /* Khoảng trống cho dấu tích */
+}
+
+.col_left_about li::before {
+  content: "✔"; /* Ký tự dấu tích */
+  position: absolute;
+  left: 0; /* Đặt vị trí của dấu tích */
+}
+
+.col_right_about {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col_right_about img {
+  max-width: 48%;
+  height: auto;
+}
+
+.col_count {
+  flex: 1;
+  padding: 20px;
+}
+
+.number_count {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.label_count {
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2.5;
+  text-align: center;
+}
+
+.col_left_variations,
+.col_right_variations {
+  flex: 1;
+}
+
+.large_image {
+  width: 100%;
+  height: auto;
+}
+
+.col_right_variations {
+  padding-left: 20px; /* Khoảng cách giữa phần trái và phải */
+}
+
+.col_right_variations h2 {
+  color: #e05c0b;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.col_right_variations p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+}
+
+.icon_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_col {
+  text-align: center;
+  flex: 1;
+}
+
+.icon_col i {
+  font-size: 40px; /* Kích thước của icon */
+  margin-bottom: 10px;
+  color: #e05c0b;
+}
+
+.icon_col p {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.top_content_about {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title_about {
+  color: #e05c0b;
+  line-height: 21px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.description_about {
+  font-size: 16px;
+}
+
+.bottom_content_about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile_about {
+  text-align: center;
+  width: 18%;
+}
+
+.profile_about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.name_about {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.job_about {
+  font-size: 14px;
+  color: gray;
+}
+
+.container_slider{
+    margin-bottom: 50px;
+}

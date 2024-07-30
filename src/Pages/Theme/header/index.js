@@ -228,7 +228,7 @@ const Header = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-2">
-            <a href="">
+            <a href="/Home">
             <div className="header__logo">
               <img
                 src="https://demos.coderplace.com/woo/WCM02/WCM02046/wp-content/uploads/2023/07/logo.svg"
@@ -295,15 +295,15 @@ const Header = () => {
             </div>
             <div className="col-xl-6 header__top_center">
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="/shop">Shop</a></li>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Shop">Shop</a></li>
                 <li>
                   <Dropdown overlay={blogMenu} trigger={["hover"]}>
                     <span style={{ cursor: "pointer" }}>Blog</span>
                   </Dropdown>
                 </li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="/About-us">About Us</a></li>
+                <li><a href="/Contact">Contact Us</a></li>
               </ul>
             </div>
             <div className="col-xl-3 header__top_right">
