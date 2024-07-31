@@ -186,13 +186,13 @@ const Header = () => {
   const blogMenu = (
     <Menu>
       <Menu.Item key="0">
-        <a href="/blog/news">Blog Left Sidebar</a>
+        <a href="/Blog-left">Blog Left Sidebar</a>
       </Menu.Item>
       <Menu.Item key="1">
-        <a href="/blog/tutorials">Blog Right Sidebar</a>
+        <a href="/Blog-right">Blog Right Sidebar</a>
       </Menu.Item>
       <Menu.Item key="2">
-        <a href="/blog/reviews">Blog Without Sidebar</a>
+        <a href="/Blog-without">Blog Without Sidebar</a>
       </Menu.Item>
     </Menu>
   );
@@ -299,7 +299,7 @@ const Header = () => {
                 <li><a href="/Shop">Shop</a></li>
                 <li>
                   <Dropdown overlay={blogMenu} trigger={["hover"]}>
-                    <span style={{ cursor: "pointer" }}>Blog</span>
+                    <span style={{ cursor: "pointer" }}><a href="/Blog-left">Blog</a></span>
                   </Dropdown>
                 </li>
                 <li><a href="/About-us">About Us</a></li>

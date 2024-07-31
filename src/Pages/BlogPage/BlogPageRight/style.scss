@@ -1,0 +1,151 @@
+.container_about {
+  background-color: #f2f2f2 !important;
+}
+.breadcrumb {
+  font-size: 14px !important;
+  color: #000;
+  margin-bottom: 10px !important;
+  padding-left: 14px !important;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container_blog {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col_left_blogs {
+  width: 20% !important;
+  padding-right: 20px !important;
+}
+
+.col_right_blogs {
+  width: 77% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+}
+
+.search_box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search_box input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.search_icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.category_box,
+.post_box,
+.tag_box {
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.category_box h2,
+.post_box h2,
+.tag_box h2,
+.card_blog h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.category_box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category_box ul li {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.post_info p {
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.tags_blog {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+}
+.tag_blog {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: nowrap;
+  max-width: fit-content;
+  width: auto;
+}
+
+.card_blog {
+  width: calc(33.333% - 20px);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card_blog img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card_blog p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #e05c0a;
+  text-align: left;
+}
+
+.category_box ul li a,
+.post_info p a,
+.tags_blog span a,
+.card_blog h2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.category_box ul li a:hover,
+.post_info p a:hover,
+.tags_blog span a:hover,
+.card_blog h2 a:hover {
+  color: #e05c0a;
+}

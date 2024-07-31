@@ -5,6 +5,9 @@ import MasterLayout from "./Pages/Theme/masterLayout";
 import ShopPage from "./Pages/ShopPage";
 import AboutUsPage from "Pages/AboutUsPage";
 import ContactPage from "Pages/ContactPage";
+import BlogPageLeft from "Pages/BlogPage/BlogPageLeft";
+import BlogPageRight from "Pages/BlogPage/BlogPageRight";
+import BlogPageWithout from "Pages/BlogPage/BlogPageWithout";
 
 const renderUserRouter = () => {
   const userRouters = [
@@ -23,6 +26,18 @@ const renderUserRouter = () => {
     {
       path: ROUTERS.USER.CONTACT,
       component: <ContactPage />,
+    },
+    {
+      path: ROUTERS.USER.BLOGLEFT,
+      component: <BlogPageLeft />,
+    },
+    {
+      path: ROUTERS.USER.BLOGRIGHT,
+      component: <BlogPageRight />,
+    },
+    {
+      path: ROUTERS.USER.BLOGWITHOUT,
+      component: <BlogPageWithout />,
     },
   ];
 
