@@ -167,5 +167,9 @@
   
   .list-end li a {
     text-decoration: none;
-    color: inherit;
+    color: #000;
+  }
+
+  .list-end li a:hover{
+    color: #e05c0a;
   }

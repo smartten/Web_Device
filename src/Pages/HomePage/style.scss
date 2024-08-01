@@ -346,6 +346,15 @@
   margin-top: 10px;
 }
 
+.product-name a{
+  text-decoration: none;
+  color: #000;
+}
+
+.product-name a:hover{
+  color: #df5b0c;
+}
+
 .stars {
   margin: 10px 0;
   color: #f5b301;
@@ -755,6 +764,15 @@
   cursor: pointer;
 }
 
+.carousel-slide img {
+  transition: opacity 0.3s ease;
+  opacity: 0.5; /* Mờ đi */
+}
+
+.carousel-slide img:hover {
+  opacity: 1; /* Rõ hơn khi hover */
+}
+
 .card-new {
   width: 330px !important;
   padding: 20px;
@@ -780,6 +798,15 @@
   font-size: 14px;
   margin-top: 30px;
   cursor: pointer;
+}
+
+.new-name a{
+  text-decoration: none;
+  color: #000;
+}
+
+.new-name a:hover{
+  color: #df5b0c;
 }
 
 .date-new {

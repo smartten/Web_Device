@@ -8,6 +8,7 @@ import ContactPage from "Pages/ContactPage";
 import BlogPageLeft from "Pages/BlogPage/BlogPageLeft";
 import BlogPageRight from "Pages/BlogPage/BlogPageRight";
 import BlogPageWithout from "Pages/BlogPage/BlogPageWithout";
+import ProductDetailPage from "Pages/ProductDetailsPage";
 
 const renderUserRouter = () => {
   const userRouters = [
@@ -38,6 +39,10 @@ const renderUserRouter = () => {
     {
       path: ROUTERS.USER.BLOGWITHOUT,
       component: <BlogPageWithout />,
+    },
+    {
+      path: ROUTERS.USER.PRODUCT_DETAIL,
+      component: <ProductDetailPage />,
     },
   ];
 

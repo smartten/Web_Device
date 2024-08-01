@@ -32,7 +32,7 @@ const ProductList = ({ products, viewMode }) => {
               />
             </div>
             <div className="details">
-              <h2 className="card_product_name">{product.name}</h2>
+              <h2 className="card_product_name"><a href="#">{product.name}</a></h2>
               <div className="stars">⭐⭐⭐⭐⭐</div>
               <p className="price">${product.price}</p>
               {viewMode === "list" && <p>{product.description}</p>}

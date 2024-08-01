@@ -88,7 +88,16 @@
 .card_product_name {
   font-weight: 600;
   font-size: 14px;
-  padding: 5px 0;
+  padding-top: 30px;
+}
+
+.card_product_name a{
+  text-decoration: none;
+  color: #000;
+}
+
+.card_product_name a:hover{
+  color: #e05c0a;
 }
 
 .btn_card_buy {

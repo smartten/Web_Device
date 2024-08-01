@@ -307,9 +307,11 @@ const Header = () => {
               </ul>
             </div>
             <div className="col-xl-3 header__top_right">
+              <a href="/shop">
               <Button className="btn_order" style={{ marginLeft: "10px" }}>
                 <span style={{ marginLeft: "8px" }}>FREE ON ORDER $50+ </span>
               </Button>
+              </a>
             </div>
           </div>
         </div>

@@ -7,5 +7,6 @@ export const ROUTERS = {
         BLOGLEFT: "Blog-left",
         BLOGRIGHT:"Blog-right",
         BLOGWITHOUT: "Blog-without",
+        PRODUCT_DETAIL: "/product/:id",
     },
 };

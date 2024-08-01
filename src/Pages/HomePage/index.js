@@ -1,6 +1,7 @@
 import "./style.scss";
 import React, { memo } from "react";
 import Slider from "react-slick";
+import { ROUTERS } from "utlis/router";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Carousel } from "antd";
@@ -11,6 +12,8 @@ import {
   BsHeadset,
 } from "react-icons/bs";
 import "antd/dist/reset.css";
+import { Link, Router, Routes, Route } from "react-router-dom";
+import ProductDetailPage from "Pages/ProductDetailsPage";
 
 const HomePage = () => {
   const settings = {
@@ -704,40 +707,37 @@ const HomePage = () => {
         </div>
       </div>
       <div className="container">
-        <div className="row">
-          <div className="container_intro">
-            <div className="first_intro">Featured Products</div>
-            <div className="second_intro">
-              Check out our collection of the top Featured Products that
-              encourage conversion.
-            </div>
+      <div className="row">
+        <div className="container_intro">
+          <div className="first_intro">Featured Products</div>
+          <div className="second_intro">
+            Check out our collection of the top Featured Products that encourage conversion.
           </div>
         </div>
-        <div className="carousel-container">
-          <Slider {...settings}>
-            {featureProducts.map((featureProducts) => (
-              <div key={featureProducts.id} className="card">
-                <div className="image-container">
-                  <img
-                    src={featureProducts.img}
-                    alt={featureProducts.name}
-                    className="default-img"
-                  />
-                  <img
-                    src={featureProducts.imgHover}
-                    alt={featureProducts.name}
-                    className="hover-img"
-                  />
-                </div>
-                <div className="product-name">{featureProducts.name}</div>
-                <div className="stars">⭐⭐⭐⭐⭐</div>
-                <div className="price">{featureProducts.price}</div>
-                <button className="btn_card">SELECT OPTION</button>
-              </div>
-            ))}
-          </Slider>
-        </div>
       </div>
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {featureProducts.map((product) => (
+            <div key={product.id} className="card">
+              <div className="image-container">
+                <Link to={`${ROUTERS.USER.PRODUCT_DETAIL.replace(":id", product.id)}`}>
+                  <img src={product.img} alt={product.name} className="default-img" />
+                  <img src={product.imgHover} alt={product.name} className="hover-img" />
+                </Link>
+              </div>
+              <div className="product-name">
+                <Link to={`${ROUTERS.USER.PRODUCT_DETAIL.replace(":id", product.id)}`}>
+                  {product.name}
+                </Link>
+              </div>
+              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <div className="price">{product.price}</div>
+              <button className="btn_card">SELECT OPTION</button>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
       <div className="container">
         <div className="row">
           <div className="image-content">
@@ -822,7 +822,7 @@ const HomePage = () => {
                     className="hover-img"
                   />
                 </div>
-                <div className="product-name">{newProducts.name}</div>
+                <div className="product-name"><a href="#">{newProducts.name}</a></div>
                 <div className="stars">⭐⭐⭐⭐⭐</div>
                 <div className="price">{newProducts.price}</div>
                 <button className="btn_card">SELECT OPTION</button>
@@ -850,44 +850,42 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="container container-deal">
-        <div className="row">
-          <div className="container_intro">
-            <div className="first_intro">Featured Products</div>
-            <div className="second_intro">
-              Check out our collection of the top Featured Products that
-              encourage conversion.
-            </div>
+      <div className="container">
+      <div className="row">
+        <div className="container_intro">
+          <div className="first_intro">Featured Products</div>
+          <div className="second_intro">
+            Check out our collection of the top Featured Products that encourage conversion.
           </div>
         </div>
-        <div className="carousel-container">
-          <Slider {...settingsAdd}>
-            {addProducts.map((addProducts, index) => (
-              <div key={addProducts.id} className="card-container">
-                <div className="card-deal">
-                  <div className="discount-badge">{addProducts.discount}</div>
-                  <div className="left-content-deal">
-                    <img
-                      src={addProducts.img}
-                      alt={addProducts.name}
-                      className="default-img"
-                    />
-                  </div>
-                  <div className="right-content-deal">
-                    <div className="product-name">{addProducts.name}</div>
-                    <div className="star">☆☆☆☆☆</div>
-                    <div className="price">{addProducts.price}</div>
-                    <button className="btn_card">SELECT OPTION</button>
-                  </div>
-                </div>
-                {index < addProducts.length - 1 && (
-                  <div className="separator-deal"></div>
-                )}
-              </div>
-            ))}
-          </Slider>
-        </div>
       </div>
+      <div className="carousel-container">
+        <Slider {...settings}>
+          {featureProducts.map((product) => (
+            <div key={product.id} className="card">
+              <div className="image-container">
+                <img
+                  src={product.img}
+                  alt={product.name}
+                  className="default-img"
+                />
+                <img
+                  src={product.imgHover}
+                  alt={product.name}
+                  className="hover-img"
+                />
+              </div>
+              <div className="product-name">
+                <Link to={`/product/${product.id}`}>{product.name}</Link>
+              </div>
+              <div className="stars">⭐⭐⭐⭐⭐</div>
+              <div className="price">{product.price}</div>
+              <button className="btn_card">SELECT OPTION</button>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </div>
       <div className="container">
         <div className="row">
           <div className="image-content">
@@ -956,7 +954,7 @@ const HomePage = () => {
                     className="hover-img"
                   />
                 </div>
-                <div className="product-name">{bestProducts.name}</div>
+                <div className="product-name"><a href="#">{bestProducts.name}</a></div>
                 <div className="stars">⭐⭐⭐⭐⭐</div>
                 <div className="price">{bestProducts.price}</div>
                 <button className="btn_card">SELECT OPTION</button>
@@ -1048,7 +1046,7 @@ const HomePage = () => {
                     className="default-img-new"
                   />
                 </div>
-                <div className="new-name">{news.name}</div>
+                <div className="new-name"><a href="#">{news.name}</a></div>
                 <div className="date-new">{news.date}</div>
               </div>
             ))}
