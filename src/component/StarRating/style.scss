@@ -1,0 +1,16 @@
+.star-rating {
+    display: flex;
+    font-size: 2rem; /* Kích thước của sao */
+    color: #ccc; /* Màu của sao rỗng */
+    cursor: pointer;
+  }
+  
+  .star-rating .star {
+    transition: color 0.3s;
+  }
+  
+  .star-rating .star.selected,
+  .star-rating .star:hover {
+    color: #f5c518; /* Màu của sao vàng */
+  }
+  
